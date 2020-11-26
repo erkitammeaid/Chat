@@ -17,7 +17,8 @@ socket.on('chatMessage', res => {
         messageLi.innerText =res.message
     messageContainer.append(messageSender)
     messageContainer.append(messageLi)
+    messageContainer.scrollTop = messageContainer.scrollHeight;
 
 })
 
-messageInput.focus
+messageInput.focus()
